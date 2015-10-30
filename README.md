@@ -4,22 +4,22 @@
 
         vim test.py
 
+                #!/usr/bin/python
+                # -*- coding: utf-8 -*- 
 
-        #!/usr/bin/python
-# -*- coding: utf-8 -*- 
+                count = 0
 
-count = 0
+                if __name__ == '__main__':
 
-if __name__ == '__main__':
+                while 1 :
+                        t = time.localtime()
+                        tsec = t.tm_sec
 
-    while 1 :
-        t = time.localtime()
-        tsec = t.tm_sec
+                        if tsec%10!=0 :
+                            print tsec
+                            time.sleep(0.8)
+                        else :
+                            print count
 
-        if tsec%10!=0 :
-            print tsec
-            time.sleep(0.8)
-        else :
-            print count
 
 
